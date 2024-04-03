@@ -1,1 +1,25 @@
 GET http://localhost:3333/produtos/
+
+###
+
+POST http://localhost:3333/produtos/
+Content-Type: application/json
+
+{
+  "descr": "Pão Francês",
+  "categoria": "Padaria",
+  "preco": 18.58,
+  "qtd": 10
+}
+
+###
+
+PUT http://localhost:3333/produtos/11
+Content-Type: application/json
+
+{
+  "descr": "Pão Francês",
+  "categoria": "Padaria",
+  "preco": 18.58,
+  "qtd": 8
+}
