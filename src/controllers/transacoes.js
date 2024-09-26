@@ -31,6 +31,8 @@ export function getTransacaoByID(req, res) {
 export function createTransacao(req, res) {
 	const { remetente, destinatario, formato, valor } = req.body
 
+	console.log("Oi")
+
 	if (!remetente || !destinatario || !valor) {
 		return res
 			.status(400)
